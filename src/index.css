@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
 body {
-  background-image: linear-gradient(#00f260, #0675e6);
+  background-image: linear-gradient(to right bottom, #00f260, #0675e6);
   background-attachment: fixed;
 }
 a {
@@ -96,4 +96,31 @@ a:hover {
   .app_main_content {
     margin: 30px;
   }
+}
+
+/*navbar*/
+
+.navbar__items {
+  display: flex;
+}
+
+.navbar__active {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #354358;
+  border-bottom: 4px solid #00f260;
+}
+
+.navbar__item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #354358;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.navbar__item:hover {
+  background-color: -webkit-linear-gradient(#00f260, #0675e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

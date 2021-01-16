@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
               <Sidebar />
             </div>
           </div>
-          <div className="col-lg-9 app_main_content">hi</div>
+          <div className="col-lg-9 app_main_content">
+            <Navbar />
+          </div>
         </div>
       </div>
     </div>
