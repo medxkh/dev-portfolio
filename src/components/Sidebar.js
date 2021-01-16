@@ -4,8 +4,12 @@ import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
 import mightycoder from "../assets/mightycoder.svg";
+import resume from "../assets/resume.pdf";
 
 function Sidebar() {
+  const handleEmail = () => {
+    window.open("mailto:medkh6699@gmail.com");
+  };
   return (
     <div className="sidebar">
       <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
@@ -13,7 +17,7 @@ function Sidebar() {
         Med <span>Kh </span>
       </div>
       <div className="sidebar__item sidebar__title"> Web Developer</div>
-      <a href="!#">
+      <a href={resume} download="resume.pdf">
         <div className="sidebar__item sidebar__resume">
           <img src={tie} alt="resume" className="sidebar__icon" />
           Download Resume
@@ -38,7 +42,9 @@ function Sidebar() {
         <div className="sidebar__item">medkh6699@gmail.com</div>
         <div className="sidebar__item">55436765</div>
       </div>
-      <div className="sidebar__item sidebar__email">Email me</div>
+      <div className="sidebar__item sidebar__email" onClick={handleEmail}>
+        Email me
+      </div>
     </div>
   );
 }

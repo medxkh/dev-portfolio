@@ -92,3 +92,8 @@ a:hover {
   background-color: #f1f1f2;
   color: black;
 }
+@media (max-width: 991px) {
+  .app_main_content {
+    margin: 30px;
+  }
+}
