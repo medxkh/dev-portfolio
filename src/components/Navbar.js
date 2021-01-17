@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar() {
+  const [active, setActive] = useState("About");
   return (
     <div className="navbar">
-      <div className="navbar__active">about</div>
+      <div className="navbar__active">{active}</div>
       <div className="navbar__items">
-        <div className="navbar__item">about</div>
-        <div className="navbar__item">resume</div>
-        <div className="navbar__item">projects</div>
+        {active !== "About" && (
+          <div className="navbar__item" onClick={() => setActive("About")}>
+            About
+          </div>
+        )}
+        {active !== "Resume" ? (
+          <div className="navbar__item" onClick={() => setActive("Resume")}>
+            Resume
+          </div>
+        ) : null}
+        {active !== "Projects" && (
+          <div className="navbar__item" onClick={() => setActive("Projects")}>
+            Projects
+          </div>
+        )}
       </div>
     </div>
   );
