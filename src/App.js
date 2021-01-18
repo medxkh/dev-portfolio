@@ -1,6 +1,11 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
@@ -18,15 +23,20 @@ function App() {
             </div>
             <div className="col-lg-9 app_main_content">
               <Navbar />
-              <Route exact path="/">
-                <About />
-              </Route>
-              <Route path="/resume">
-                <Resume />
-              </Route>
-              <Route path="/projects" component={Projects}>
-                <Projects />
-              </Route>
+              <Switch>
+                <Route exact path="/">
+                  <About />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+                <Route path="/projects" component={Projects}>
+                  <Projects />
+                </Route>
+                <Route>
+                  <Redirect to="/" />
+                </Route>
+              </Switch>
             </div>
           </div>
         </div>
