@@ -18,13 +18,13 @@ function App() {
             </div>
             <div className="col-lg-9 app_main_content">
               <Navbar />
-              <Route path="/">
+              <Route exact path="/">
                 <About />
               </Route>
               <Route path="/resume">
                 <Resume />
               </Route>
-              <Route path="/projects">
+              <Route path="/projects" component={Projects}>
                 <Projects />
               </Route>
             </div>
