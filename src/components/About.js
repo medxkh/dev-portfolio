@@ -15,6 +15,30 @@ const skills = [
     about:
       "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
   },
+  {
+    icon: api,
+    title: "lorem ipsum dolor sit.",
+    about:
+      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+  },
+  {
+    icon: api,
+    title: "lorem ipsum dolor sit.",
+    about:
+      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+  },
+  {
+    icon: api,
+    title: "lorem ipsum dolor sit.",
+    about:
+      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+  },
+  {
+    icon: api,
+    title: "lorem ipsum dolor sit.",
+    about:
+      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+  },
 ];
 
 function About() {
