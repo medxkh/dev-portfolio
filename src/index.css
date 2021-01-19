@@ -126,3 +126,22 @@ a:hover {
 }
 
 /*about*/
+.about {
+  padding: 20px;
+}
+
+.about__into {
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+.about__container {
+  background-color: #dbdddf;
+  padding: 20px;
+}
+
+.about__heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #354358;
+}
