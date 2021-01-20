@@ -1,4 +1,40 @@
 import React from "react";
+import react from "../assets/icons/react.svg";
+import Bar from "./Bar";
+const languages = [
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+];
+const tools = [
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+  {
+    icon: "react",
+    name: "Python",
+    level: "",
+  },
+];
 
 function Resume() {
   return (
@@ -28,11 +64,19 @@ function Resume() {
       <div className="row">
         <div className="col-lg-6 languages">
           <h5 className="resume-language__heading">language and framework</h5>
-          <div className="resume-language__body">{}</div>
+          <div className="resume-language__body">
+            {languages.map((language) => (
+              <Bar value={language} />
+            ))}
+          </div>
         </div>
         <div className="col-lg-6 languages">
           <h5 className="resume-language__heading">Tools and Softwares</h5>
-          <div className="resume-language__body">{}</div>
+          <div className="resume-language__body">
+            {tools.map((tool) => (
+              <Bar value={tool} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
