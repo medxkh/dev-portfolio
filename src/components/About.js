@@ -1,43 +1,43 @@
 import React from "react";
 import api from "../assets/icons/api.svg";
+import algo from "../assets/icons/algo.svg";
+import computer from "../assets/icons/computer.svg";
+import repair from "../assets/icons/repair.svg";
+import puzzle from "../assets/icons/puzzle.svg";
 import Skillcard from "./Skillcard";
 
 const skills = [
   {
-    icon: api,
-    title: "lorem ipsum dolor sit.",
+    icon: computer,
+    title: "Frontend Devlopment",
     about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+      "i can build a beautiful and scalable SPA using HTML, CSS and React.js",
+  },
+  {
+    icon: repair,
+    title: "Backend Development",
+    about: "handle database, server, api using django/firebase/SQL",
   },
   {
     icon: api,
-    title: "lorem ipsum dolor sit.",
-    about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+    title: "API Development ",
+    about: "I can develop rebust REST API ",
   },
   {
-    icon: api,
-    title: "lorem ipsum dolor sit.",
-    about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+    icon: algo,
+    title: "Competitive Coder",
+    about: "a daily problem solver, trying new algo ",
   },
   {
-    icon: api,
-    title: "lorem ipsum dolor sit.",
-    about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+    icon: puzzle,
+    title: "contrebute open source",
+    about: "i can change add new future in open source projects",
   },
   {
-    icon: api,
-    title: "lorem ipsum dolor sit.",
+    icon: computer,
+    title: "Web scraping/automation",
     about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
-  },
-  {
-    icon: api,
-    title: "lorem ipsum dolor sit.",
-    about:
-      "lorem of 10 line and this is it zmot sarijio dila moppi cambojiballalala",
+      "i can scrape data from web and make bots for automation using python",
   },
 ];
 
