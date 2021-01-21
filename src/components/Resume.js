@@ -3,36 +3,36 @@ import react from "../assets/icons/react.svg";
 import Bar from "./Bar";
 const languages = [
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "46",
   },
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "55",
   },
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "66",
   },
 ];
 const tools = [
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "56",
   },
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "88",
   },
   {
-    icon: "react",
+    icon: react,
     name: "Python",
-    level: "",
+    level: "78",
   },
 ];
 
@@ -64,7 +64,7 @@ function Resume() {
       <div className="row">
         <div className="col-lg-6 languages">
           <h5 className="resume-language__heading">language and framework</h5>
-          <div className="resume-language__body">
+          <div className="resume-language__body mt-3">
             {languages.map((language) => (
               <Bar value={language} />
             ))}
@@ -72,7 +72,7 @@ function Resume() {
         </div>
         <div className="col-lg-6 languages">
           <h5 className="resume-language__heading">Tools and Softwares</h5>
-          <div className="resume-language__body">
+          <div className="resume-language__body mt-3">
             {tools.map((tool) => (
               <Bar value={tool} />
             ))}

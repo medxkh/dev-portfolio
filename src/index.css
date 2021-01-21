@@ -192,6 +192,9 @@ a:hover {
 .resume-card__title {
   font-weight: 700;
 }
+.resume-card__name {
+  font-size: 16px;
+}
 .resume-card__details {
   font-size: 0.9rem;
   padding-top: 20px;
