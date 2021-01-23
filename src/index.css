@@ -3,6 +3,13 @@ body {
   background-image: linear-gradient(to right bottom, #00f260, #0675e6);
   background-attachment: fixed;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #00f260, #0675e6);
+}
+
 a {
   text-decoration: none;
   color: #354548;
@@ -237,10 +244,16 @@ a:hover {
   height: 80%;
   border-radius: 30px;
   border: 1px solid #00f260;
+  transition: transform 0.3s linear;
 }
+.projectCard__image:hover {
+  transform: scale(1.05);
+}
+
 .projectCard__icon {
   width: 25px;
   height: 25px;
+  margin-right: 5px;
 }
 
 .projectCard__title {
@@ -249,4 +262,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.projects__navbar {
+  display: flex;
+  margin-bottom: 5px;
+}
+.projects__navbar > div {
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
